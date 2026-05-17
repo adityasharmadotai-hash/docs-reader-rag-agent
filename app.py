@@ -6,6 +6,7 @@ st.title("📄 Document AI Agent")
 st.write("Ask any question and the AI will answer from your Word documents.")
 
 documents = load_documents()
+st.text_area("DEBUG - what the AI sees:", documents, height=200)  # add this line
 
 if not documents.strip():
     st.warning("No documents found. Please add .docx files to the 'docs' folder in your GitHub repo.")
