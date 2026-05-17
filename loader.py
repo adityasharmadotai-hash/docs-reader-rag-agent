@@ -1,5 +1,17 @@
 import os
 from docx import Document
+from docx.oxml.ns import qn
+
+def get_outline_level(para):
+    try:
+        pPr = para._p.find(qn('w:pPr'))
+        if pPr is not None:
+            outlineLvl = pPr.find(qn('w:outlineLvl'))
+            if outlineLvl is not None:
+                return int(outlineLvl.get(qn('w:val')))
+    except Exception:
+        pass
+    return None
 
 def load_documents(folder="docs"):
     all_text = ""
@@ -7,19 +19,24 @@ def load_documents(folder="docs"):
         if filename.endswith(".docx"):
             path = os.path.join(folder, filename)
             doc = Document(path)
+            all_text += f"\n\n{'='*50}\nDOCUMENT: {filename}\n{'='*50}\n"
 
-            paragraphs = [para.text for para in doc.paragraphs if para.text.strip()]
+            current_section = ""
+            for para in doc.paragraphs:
+                text = para.text.strip()
+                if not text:
+                    continue
+                level = get_outline_level(para)
+                if level is not None:
+                    current_section = text
+                    all_text += f"\n[SECTION: {text}]\n"
+                else:
+                    if "\n" in para.text:
+                        for line in para.text.split("\n"):
+                            line = line.strip()
+                            if line:
+                                all_text += f"- {line}\n"
+                    else:
+                        all_text += f"- {text}\n"
 
-            table_texts = []
-            for table in doc.tables:
-                for row in table.rows:
-                    row_text = " | ".join(cell.text.strip() for cell in row.cells if cell.text.strip())
-                    if row_text:
-                        table_texts.append(row_text)
-
-            combined = "\n".join(paragraphs)
-            if table_texts:
-                combined += "\n\nTable Data:\n" + "\n".join(table_texts)
-
-            all_text += f"\n\n--- {filename} ---\n{combined}"
     return all_text

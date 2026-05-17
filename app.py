@@ -8,7 +8,6 @@ st.markdown("""
     <style>
     .main { background-color: #f8f9fa; }
     .stChatMessage { border-radius: 12px; padding: 8px; margin-bottom: 8px; }
-    .stChatInputContainer { border-top: 2px solid #e0e0e0; padding-top: 10px; }
     h1 { color: #1a1a2e; font-family: 'Segoe UI', sans-serif; }
     .subtitle { color: #666; font-size: 16px; margin-bottom: 20px; }
     </style>
@@ -43,7 +42,7 @@ else:
         st.session_state.messages.append({"role": "user", "content": question})
 
         with st.spinner("🤖 Thinking..."):
-            answer = ask(question, documents)
+            answer = ask(question, documents, st.session_state.messages)
 
         st.chat_message("assistant", avatar="🤖").write(answer)
         st.session_state.messages.append({"role": "assistant", "content": answer})
