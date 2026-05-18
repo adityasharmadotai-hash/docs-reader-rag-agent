@@ -2,7 +2,7 @@
 
 An AI-powered chatbot that reads your Word documents and answers questions from them — built with Python, OpenAI, and Streamlit.
 
-**FIND THE STEP-BY-STEP TUTORIAL [HERE](https://github.com/adityasharmadotai-hash/docs-reader-rag-agent/blob/main/TUTORIAL.md)**
+**👉 FIND THE STEP-BY-STEP TUTORIAL [HERE](https://github.com/adityasharmadotai-hash/docs-reader-rag-agent/blob/main/TUTORIAL.md)**
 
 ---
 
