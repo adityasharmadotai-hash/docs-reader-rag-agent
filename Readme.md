@@ -21,6 +21,8 @@ Built as a beginner-friendly open source project to demonstrate how Retrieval Au
 - 🤖 Asks clarifying questions when multiple documents are loaded
 - 🧹 Clear chat button to reset the conversation
 
+<img width="3024" height="1964" alt="image" src="https://github.com/user-attachments/assets/4eceb25e-122c-4681-9191-213956f4e6c9" />
+
 ---
 
 ## How It Works
@@ -61,6 +63,7 @@ app.py displays the answer in the chat interface
     ├── document1.docx
     └── document2.docx
 ```
+<img width="3024" height="1964" alt="image" src="https://github.com/user-attachments/assets/acc5f184-3d34-4d08-bd71-d5172f17fe58" />
 
 ---
 
