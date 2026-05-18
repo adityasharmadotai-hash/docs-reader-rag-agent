@@ -68,8 +68,8 @@ app.py displays the answer in the chat interface
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/adityasharmadotai-hash/docs-reader-rag-agent.git
+cd docs-reader-rag-agent
 ```
 
 ### 2. Install dependencies
