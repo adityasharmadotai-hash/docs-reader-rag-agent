@@ -116,3 +116,18 @@ Pull requests are welcome! If you find a bug or want to suggest a feature, open 
 ## License
 
 MIT License — free to use, modify, and share.
+
+---
+
+## ⭐ If you find this useful...
+
+If you learned something from this project, it would mean a lot if you could:
+
+- ⭐ **[Star this repository](https://github.com/adityasharmadotai-hash)** — it helps others discover this project
+- 💼 **[Follow on LinkedIn](https://www.linkedin.com/in/aditya-hicounselor/)** — for daily AI news, tools, and updates
+- 📺 **[Subscribe on YouTube](https://www.youtube.com/channel/UCPjQtVNUrf7EKrm8ZoqrCAQ)** — AI agents, tutorials, and the latest in the world of AI
+
+> 🚀 **Looking for a job at a top AI company in the USA?**
+> Fill out your information here → **[Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSc3gJssBV3B25EZ3sYA7Qcen9NbtOB_wgQaturfB7lTXuAdLQ/viewform)**
+
+---

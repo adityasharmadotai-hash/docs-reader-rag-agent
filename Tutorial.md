@@ -529,3 +529,24 @@ Now that you have a working app, here are some ideas to extend it:
 ---
 
 *Built with ❤️ using Python, OpenAI, and Streamlit*
+
+---
+
+## ⭐ Enjoyed this tutorial?
+
+If you learned something, it would mean a lot if you could:
+
+- ⭐ **[Star the GitHub repository](https://github.com/adityasharmadotai-hash)** — helps others discover this project
+- 💼 **[Follow on LinkedIn](https://www.linkedin.com/in/aditya-hicounselor/)** — daily AI news, tools, and updates
+- 📺 **[Subscribe on YouTube](https://www.youtube.com/channel/UCPjQtVNUrf7EKrm8ZoqrCAQ)** — AI agents, tutorials, and the latest in AI
+
+> 🚀 **Looking for a job at a top AI company in the USA?**
+> Fill out your information here → **[Apply Now](https://docs.google.com/forms/d/e/1FAIpQLSc3gJssBV3B25EZ3sYA7Qcen9NbtOB_wgQaturfB7lTXuAdLQ/viewform)**
+
+---
+Now update the HTML blog post — adding a CTA banner right after the hero section:
+
+Edited
+blog-post.html
++28
+-0
